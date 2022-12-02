@@ -1,11 +1,11 @@
-﻿using AdventOfCode;
+﻿using Advent_of_code_2022.days;
 
 public class Program
 {
     public static void Main()
     {
         //Day1
-        string path = "Calories.txt";
+        string path = "files/Calories.txt";
         //part 1
         List<string> stringValues = Day1.ReadFile(path);
         List<int> numberValues = Day1.StringToInt(stringValues);
@@ -18,7 +18,7 @@ public class Program
 
         //Day2
 
-        string path2 = "puzzleInput.txt";
+        string path2 = "files/puzzleInput.txt";
         //Part 1
         int totalScore = Day2.Play(path2);
         Console.WriteLine("Day two answer: " + totalScore);

@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode
+﻿namespace Advent_of_code_2022.days
 {
     public static class Day2
     {
@@ -51,7 +51,7 @@
         public static bool SuccessfulDef(string att, string def)
         {
 
-            return (att == "C" && def == "X") || (att == "B" && def == "Z") || (att == "A" && def == "Y");
+            return att == "C" && def == "X" || att == "B" && def == "Z" || att == "A" && def == "Y";
         }
 
 
@@ -74,7 +74,7 @@
                 {
                     pair[1] = draw[pair[0]];
                 }
-                int score = Day2.CountMatchScore(pair[0], pair[1]);
+                int score = CountMatchScore(pair[0], pair[1]);
                 totalScore += score;
 
             }
