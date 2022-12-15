@@ -2,7 +2,7 @@
 {
     public class Day1
     {
-        public static int ThreeHighest(List<int> caloryCountList)
+        public static void ThreeHighest(List<int> caloryCountList)
         {
             int totalSum = 0;
             List<int> list = caloryCountList;
@@ -22,7 +22,7 @@
                 }
             }
 
-            return totalSum;
+            Console.WriteLine($"Total sum of three highest calorie counts: {totalSum}");
         }
         public static int HighestCalorieCount(List<int> caloryCountList)
         {

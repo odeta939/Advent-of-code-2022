@@ -55,7 +55,7 @@
         }
 
 
-        public static int Play(string path)
+        public static void Play(string path)
         {
             int totalScore = 0;
             string[] file = File.ReadAllLines(path);
@@ -78,7 +78,7 @@
                 totalScore += score;
 
             }
-            return totalScore;
+            Console.WriteLine($"total score: {totalScore}");
         }
 
     }
